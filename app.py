@@ -20,6 +20,10 @@ def home():
 def add_recipe_page():
     return render_template('add.html')
 
+@app.route('/help')
+def help_page():
+    return render_template('help.html')
+
 # API 1: Get ALL recipes (for the main feed)
 @app.route('/api/recipes')
 def get_recipes():
