@@ -164,22 +164,30 @@
 
     <form id="recipe-form">
         <div class="form-group">
-            <label>Recipe Name *</label>
+            <label>Recipe Name *
+                <span style="cursor:help; color:#b2bec3; font-size:0.8rem;" title="Give your recipe a catchy name!">ⓘ</span>
+            </label>
             <input type="text" id="recipe-name" required placeholder="e.g., Spicy Ramen">
         </div>
 
         <div class="form-group">
-            <label>Description *</label>
+            <label>Description *
+                <span style="cursor:help; color:#b2bec3; font-size:0.8rem;" title="Describe a bit more about your recipe here. Keep it short">ⓘ</span>
+            </label>
             <input type="text" id="recipe-description" required placeholder="Brief description">
         </div>
 
         <div class="form-group">
-            <label>Cooking Time (minutes) *</label>
+            <label>Cooking Time (minutes) *
+                <span style="cursor:help; color:#b2bec3; font-size:0.8rem;" title="How long will it take to make this, including prep time">ⓘ</span>
+            </label>
             <input type="number" id="cooking-time" required min="1" placeholder="15">
         </div>
 
         <div class="form-group">
-            <label>Cost *</label>
+            <label>Cost *
+                <span style="cursor:help; color:#b2bec3; font-size:0.8rem;" title="Cheap = under £3, Mid = £3-£6, Treat = over £6">ⓘ</span>
+            </label>
             <div class="cost-options">
                 <label><input type="radio" name="cost" value="1" checked> 💰 Cheap</label>
                 <label><input type="radio" name="cost" value="2"> 💰💰 Mid</label>
@@ -188,7 +196,9 @@
         </div>
 
         <div class="form-group">
-            <label>Instructions *</label>
+            <label>Instructions *
+                <span style="cursor:help; color:#b2bec3; font-size:0.8rem;" title="Explain how to make this step by step">ⓘ</span>
+            </label>
             <textarea id="instructions" required placeholder="Step by step instructions..."></textarea>
         </div>
 
@@ -198,7 +208,9 @@
         </div>
 
         <div class="form-group">
-            <label>Ingredients *</label>
+            <label>Ingredients *
+                <span style="cursor:help; color:#b2bec3; font-size:0.8rem;" title="Add ingredients one by one">ⓘ</span>
+            </label>
             <div style="display:flex; gap:10px; margin-bottom:8px;">
                 <input type="text" id="ingredient-name" placeholder="e.g., Egg" style="flex:2;">
                 <input type="text" id="ingredient-quantity" placeholder="e.g., 2 large" style="flex:1;">
@@ -214,6 +226,8 @@
             <button type="reset" class="btn btn-secondary">Clear All</button>
         </div>
     </form>
+
+    
 
     <a href="/" class="back-link">← Back to all recipes</a>
 
