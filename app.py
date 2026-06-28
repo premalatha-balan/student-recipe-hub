@@ -9,7 +9,7 @@ CORS(app)
 
 def get_db_connection():
     conn = sqlite3.connect('recipes.db')
-    conn.row_factory = sqlite3.Row # Allows accessing columns by name
+    conn.row_factory = sqlite3.Row  # Allows accessing columns by name
     return conn
 
 @app.route('/')
@@ -28,7 +28,7 @@ def get_recipes():
 @app.route('/api/search', methods=['POST'])
 def search_by_ingredients():
     data = request.get_json()
-    user_ingredients = data.get('ingredients', []) # e.g., ["Egg", "Milk", "Cheese"]
+    user_ingredients = data.get('ingredients', [])  # e.g., ["Egg", "Milk", "Cheese"]
     
     if not user_ingredients:
         return jsonify([])
